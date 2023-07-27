@@ -1,6 +1,7 @@
 # NgrxExperiment
 
-A marketplace which I will providing features aiming learning, applying new concepts and experimenting whatever the things in angular environment
+A marketplace which I will be providing features aiming learning, applying new concepts and experimenting whatever the things in angular environment
+
 At first started with NgRx features but can be extended to anything in Angular.
 
 
