@@ -1,6 +1,18 @@
 # NgrxExperiment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+A marketplace which I will providing features aiming learning, applying new concepts and experimenting whatever the things in angular environment
+At first started with NgRx features but can be extended to anything in Angular.
+
+
+## Next Features:
+- [ ] Put some animation for better visualization
+- [ ] Test reducers
+
+## Done features:
+- [x] Working on NgRx with one item (its just like a click counter)
+- [x] Working on NgRx editing a list values (manage data in a list)
+
+
 
 ## Development server
 
