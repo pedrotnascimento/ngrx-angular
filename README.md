@@ -8,6 +8,16 @@ At first started with NgRx features but can be extended to anything in Angular.
 ## Next Features:
 - [ ] Put some animation for better visualization
 - [ ] Test reducers
+- [ ] use angular material
+- [ ] use json-server
+- [ ] finish buyer features 
+- [ ] create seller profile
+- [ ] create authentication
+- [ ] separate auth, seller and buyer into modules
+- [ ] separate a module to be the core of application and be used as npm package
+- [ ] use single spa with the modules
+- [ ] deploy using docker
+- [ ] deploy everything and create a pipeline
 
 ## Done features:
 - [x] Working on NgRx with one item (its just like a click counter)
