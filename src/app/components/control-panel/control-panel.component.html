@@ -1,10 +1,10 @@
 <div class="product-controllers">
     <div class="product-controll-unit">
-        <div (click)="subtractProduct(product)" [ngClass]="displayIfHasQuantity(product)">➖</div>
-        <div class="product-counter">{{product.quantity}}</div>
+        <div (click)="subtractProduct(product)" [ngClass]="displayIfHasQuantity(product$) | async">➖</div>
+        <div class="product-counter">{{(product$ | async)?.quantity }}</div>
         <div (click)="addProduct(product)" class="product-action">➕</div>
     </div>
     <div class="product-controll-delete-all">
-        <div (click)="removeProduct(product)" [ngClass]="displayIfHasQuantity(product)">🗑️</div>
+        <div (click)="removeProduct(product)" [ngClass]="displayIfHasQuantity(product$) | async">🗑️</div>
     </div>
 </div>
