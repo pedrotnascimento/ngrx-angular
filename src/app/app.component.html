@@ -3,6 +3,10 @@
 <div>Search bar</div>
 <div class="products-frame">
   Products
-  <app-product [product]="product"></app-product>
+  <div class="products">
+    <div class="product-item" *ngFor="let product of products$ | async ">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
 </div>
 <router-outlet></router-outlet>

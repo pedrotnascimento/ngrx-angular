@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { ProductComponent } from './components/product/product.component';
 import { ControlPanelComponent } from './components/control-panel/control-panel.component';
 import { controlPanelReducer } from './components/control-panel/control-panel.reducer';
+import { productReducer } from './procuct.reducer';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { controlPanelReducer } from './components/control-panel/control-panel.re
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({controlPanel: controlPanelReducer})
+    StoreModule.forRoot({controlPanel: controlPanelReducer, products: productReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

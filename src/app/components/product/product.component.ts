@@ -8,5 +8,4 @@ import { Product } from 'src/app/types/Product';
 })
 export class ProductComponent {
   @Input() product: Product = { id: "", name: "", quantity: 0 };
-
 }
