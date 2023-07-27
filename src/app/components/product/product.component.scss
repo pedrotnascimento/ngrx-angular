@@ -1,0 +1,15 @@
+.products-frame {
+    .product {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .product-image {
+            background-color: bisque;
+        }
+
+        
+    }
+}

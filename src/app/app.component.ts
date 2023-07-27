@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from './types/Product';
 
 
-type Product = {
-  name: string;
-  quantity: number;
-  id: string;
-};
 
 @Component({
   selector: 'app-root',
@@ -14,7 +10,7 @@ type Product = {
 })
 export class AppComponent implements OnInit {
   title = 'ngrx-experiment';
-  product?: Product;
+  product: Product = { id: "", name: "", quantity: 0 };
 
   ngOnInit(): void {
     this.product = {
@@ -24,22 +20,4 @@ export class AppComponent implements OnInit {
     };
   }
 
-  subtractProduct(product: Product) {
-    if (product.quantity <= 0) {
-      return;
-    }
-    product.quantity -= 1;
-  }
-
-  addProduct(product: Product) {
-    product.quantity += 1;
-  }
-
-  removeProduct(product: Product){
-    product.quantity = 0;
-  }
-
-  displayIfHasQuantity(product: Product) {
-    return { 'product-action': product.quantity > 0, 'product-disable': product.quantity <= 0 };
-  }
 }

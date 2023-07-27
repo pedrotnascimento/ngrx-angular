@@ -3,20 +3,6 @@
 <div>Search bar</div>
 <div class="products-frame">
   Products
-  <div class="product" *ngIf="product">
-    <div class="product-image"><img src="assets/lorem-ipsum.jpeg" /> </div>
-    <div class="product-name">Ipsum Lorem</div>
-    <div class="product-controllers">
-      <div class="product-controll-unit">
-        <div (click)="subtractProduct(product)" [ngClass]="displayIfHasQuantity(product)">➖</div>
-        <div class="product-counter">{{product.quantity}}</div>
-        <div (click)="addProduct(product)" class="product-action">➕</div>
-      </div>
-      <div class="product-controll-delete-all">
-        <div (click)="removeProduct(product)" [ngClass]="displayIfHasQuantity(product)">🗑️</div>
-      </div>
-    </div>
-
-  </div>
+ <app-product [product]="product"></app-product>
 </div>
 <router-outlet></router-outlet>
