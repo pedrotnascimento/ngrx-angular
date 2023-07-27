@@ -20,17 +20,18 @@ export class ControlPanelComponent {
 
 
   subtractProduct(product: Product) {
-    this.store.dispatch(subtractProduct()); //used when it have only one item in the screen
     this.store.dispatch(subtractProductQuantityAction({ productId: product.id }));
+    // this.store.dispatch(subtractProduct()); //used when it have only one item in the screen
     // if (product.quantity <= 0) {
     //   return;
     // }
     // product.quantity -= 1;
+    product.quantity = 100; // AS it use OnPush strategy the change will not be reflected
   }
 
   addProduct(product: Product) {
-    // this.store.dispatch(addProduct());//used when it have only one item in the screen
     this.store.dispatch(addProductQuantityAction({ productId: product.id }));
+    // this.store.dispatch(addProduct());//used when it have only one item in the screen
     // product.quantity += 1;
   }
 
