@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from './types/Product';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { setProductsAction } from './procuct.reducer';
+import { setProductsAction } from './product.reducer';
 
 
 

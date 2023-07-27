@@ -7,7 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { ProductComponent } from './components/product/product.component';
 import { ControlPanelComponent } from './components/control-panel/control-panel.component';
 import { controlPanelReducer } from './components/control-panel/control-panel.reducer';
-import { productReducer } from './procuct.reducer';
+import { productReducer } from './product.reducer';
 
 @NgModule({
   declarations: [

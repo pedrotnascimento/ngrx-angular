@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Observable, ObservableLike, map, mergeMap, of } from 'rxjs';
 import { Product } from 'src/app/types/Product';
 import { addProduct, resetProduct, subtractProduct } from './control-panel.actions';
-import { addProductQuantityAction, resetProductQuantityAction, subtractProductQuantityAction } from 'src/app/procuct.reducer';
+import { addProductQuantityAction, resetProductQuantityAction, subtractProductQuantityAction } from 'src/app/product.reducer';
 
 @Component({
   selector: 'app-control-panel',
